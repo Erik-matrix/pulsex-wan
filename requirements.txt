@@ -1,0 +1,22 @@
+# PulseX Wan - the Python side of the pipeline (python\wan_pipeline.py and the modules it starts).
+# Python 3.12 for Windows on ARM64 (python.org's "ARM64" installer). Install with:
+#
+#   python -m pip install -r requirements.txt
+#
+# The versions are the ones the window's pipeline was measured with (Python 3.12.10 ARM64, 2026-10-24).
+# Only packages the window's path imports are listed; pip brings their own dependencies.
+
+# PyTorch for Windows on ARM64 (CPU build) comes from PyTorch's own index
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.13.0              # everything on the host side: the patch / head / solver, VAE glue, the taehv decoder
+
+numpy==2.5.1               # everywhere
+gguf==0.19.0               # reads the model's extras file and the VAE (Q4_0)
+sentencepiece==0.2.2       # the umT5 tokenizer (spiece.model)
+safetensors==0.8.0         # imported by the text-encoder module; the CPU VAE encoder
+diffusers==0.39.0          # the UniPC scheduler; the Wan VAE classes for the CPU check / fallback
+onnxruntime-qnn==1.24.4    # the VAE decoder / encoder graphs on the NPU (ONNX Runtime's QNN execution provider)
+pillow==12.3.0             # the picture in (image to video), the preview frame
+tqdm==4.68.3               # imported by taehv (the "Fast" decoder)
+
+# Optional, not on the window's normal path: psutil==7.2.2 - needed only if you set WAN_MEM_LOG=1 (memory per step in the log).

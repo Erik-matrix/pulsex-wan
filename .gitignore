@@ -1,0 +1,28 @@
+# the models, Qualcomm's runtime and ffmpeg never belong in this repository
+models/
+qnn/
+ffmpeg/
+*.gguf
+*.hexpack
+*.safetensors
+*.onnx
+*.pth
+*.npz
+*.npy
+model.bin
+model_qnn.bin
+*_ctx_qnn.bin
+
+# what the program makes, and its work files
+*.mp4
+*.rgb
+work/
+
+# build output and scratch
+build/
+*.pdb
+*.obj
+*.ilk
+*.log
+__pycache__/
+*.pyc

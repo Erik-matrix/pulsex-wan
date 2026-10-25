@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "wan": "../python",
+    "models": "../models",
+    "bin": ".",
+    "qnn": "../qnn",
+    "ffmpeg": "ffmpeg.exe"
+  }
+}
