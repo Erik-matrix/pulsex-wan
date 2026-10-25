@@ -82,7 +82,7 @@ video cannot be stopped halfway: an engine is never killed with the NPU open.
 
 ## Install
 
-The easy way: download `PulseX-Wan-Setup-0.1.0.exe` from the
+The easy way: download `PulseX-Wan-Setup-0.1.1.exe` from the
 [latest release](https://github.com/Erik-matrix/pulsex-wan/releases/latest) and run it. It installs the program
 for your user only (no administrator), with the five Qualcomm files in `qnn\`, and downloads the models (about
 12.7 GB, from Hugging Face, each file checked against its SHA-256) and ffmpeg (above). It does not install Python:
