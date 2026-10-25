@@ -15,6 +15,7 @@ model_qnn.bin
 
 # what the program makes, and its work files
 *.mp4
+!docs/examples/*.mp4
 *.rgb
 work/
 
