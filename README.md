@@ -4,6 +4,21 @@ Short videos from a description or from a picture, made on the NPU of a Snapdrag
 cloud. It runs **Wan 2.2 TI2V-5B** (Wan-AI), its transformer quantised to 4 bits, on the Hexagon NPU, with the
 VAE decoder as compiled NPU graphs.
 
+## Examples
+
+Made on a Snapdragon X Plus (16 GB) with the window's defaults: 15 steps, the *Sharp* decoder, 2 s (49 frames). The
+pictures below are animated WebPs; each links to its mp4.
+
+| Text to video, 480p | Text to video, 720p |
+|---|---|
+| [![a red boat on a misty lake](docs/examples/boat-480p.webp)](docs/examples/boat-480p.mp4) | [![a lighthouse at dusk](docs/examples/lighthouse-720p.webp)](docs/examples/lighthouse-720p.mp4) |
+| *"a small red wooden boat drifting on a calm lake at sunrise, thin mist over the water, gentle ripples, a pine forest on the far shore"* - seed 4242, 5.5 min | *"a lighthouse on a rocky coast at dusk, waves breaking slowly on the rocks, seagulls gliding over the sea, static camera"* - seed 7, 12.5 min |
+
+| Start picture | Image to video, 720p, *Calm* |
+|---|---|
+| [![a windmill on a hill](docs/examples/windmill-start.jpg)](docs/examples/windmill-start.jpg) | [![the windmill's sails turning](docs/examples/windmill-720p.webp)](docs/examples/windmill-720p.mp4) |
+| made on the same NPU with [PulseX Image](https://github.com/Erik-matrix/pulsex-image) (FLUX.2 klein): *"an old wooden windmill on a green hill under a blue sky with white clouds, wildflowers in the grass, summer, photo"* | *"the windmill's sails turn slowly, white clouds drift across the blue sky, the grass and the wildflowers sway in the wind, static camera"* - seed 3, 12.5 min |
+
 ## What it does
 
 - **Text to video**: a description in, an mp4 out, 2 s (49 frames) or 5 s (121 frames) at 24 frames a second.
