@@ -19,6 +19,20 @@ pictures below are animated WebPs; each links to its mp4.
 | [![a windmill on a hill](docs/examples/windmill-start.jpg)](docs/examples/windmill-start.jpg) | [![the windmill's sails turning](docs/examples/windmill-720p.webp)](docs/examples/windmill-720p.mp4) |
 | made on the same NPU with [PulseX Image](https://github.com/Erik-matrix/pulsex-image) (FLUX.2 klein): *"an old wooden windmill on a green hill under a blue sky with white clouds, wildflowers in the grass, summer, photo"* | *"the windmill's sails turn slowly, white clouds drift across the blue sky, the grass and the wildflowers sway in the wind, static camera"* - seed 3, 12.5 min |
 
+### A short film
+
+[![a man and a woman with a child on her arm walk away along a dusty track between olive trees](docs/examples/flight-into-egypt.jpg)](https://github.com/Erik-matrix/pulsex-wan/releases/tag/film-flight-into-egypt)
+
+**[The Flight into Egypt](https://github.com/Erik-matrix/pulsex-wan/releases/tag/film-flight-into-egypt)** (11 min, English, burned-in
+subtitles, 640x352 mp4, 31 MB) - Selma Lagerlöf's legend from *Christ Legends* (1904), in Velma Swanston Howard's
+translation (1908), told by the palm tree. Not everything in it was made on the NPU:
+
+| | |
+|---|---|
+| on this laptop's NPU | about 500 s of the 640 s of moving picture: Wan 2.2 TI2V-5B (this program), most of its start pictures made with [PulseX Image](https://github.com/Erik-matrix/pulsex-image) (FLUX.2 klein); 20 s of speaking faces with Wan 2.2 S2V-14B |
+| in the cloud | about 2 min of the moving picture (Google Gemini); the palm's voice (Gemini TTS); the music *Oasis of the Ancients* (Gemini) |
+| the rest | the other voices: Kokoro TTS and Orpheus TTS (Built with Llama); music: Berlioz, *L'Enfance du Christ* (Paris Conservatoire, 1951) |
+
 ## What it does
 
 - **Text to video**: a description in, an mp4 out, 2 s (49 frames) or 5 s (121 frames) at 24 frames a second.
